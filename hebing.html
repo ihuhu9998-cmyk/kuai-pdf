@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PDF合并 - 免费在线合并多个PDF文件 | 快PDF工具箱</title>
+<meta name="description" content="免费在线PDF合并工具：将多个PDF按顺序合并成一个文件，支持调整顺序。浏览器本地处理，文件不上传，无需注册。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="快PDF工具箱">
+<meta property="og:title" content="PDF合并 - 免费在线合并多个PDF文件 | 快PDF工具箱">
+<meta property="og:description" content="免费在线PDF合并工具：将多个PDF按顺序合并成一个文件，支持调整顺序。浏览器本地处理，文件不上传，无需注册。">
+<style>
+:root{--bg:#f4f6fb;--ink:#1f2937;--muted:#6b7280;--brand:#4f46e5;--brand-dark:#4338ca;--ok:#059669;--err:#dc2626;--line:#e5e7eb;--radius:12px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.7}
+a{color:var(--brand);text-decoration:none}
+.site-header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.site-header .wrap{max-width:1024px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;gap:20px}
+.logo{font-size:19px;font-weight:800;color:var(--ink);white-space:nowrap}
+.logo span{color:var(--brand)}
+nav.mainnav{display:flex;gap:4px;flex-wrap:wrap}
+nav.mainnav a{padding:8px 14px;border-radius:8px;color:var(--ink);font-size:14px}
+nav.mainnav a:hover{background:#eef2ff;color:var(--brand)}
+nav.mainnav a.active{background:#eef2ff;color:var(--brand);font-weight:700}
+.wrap{max-width:1024px;margin:0 auto;padding:0 16px}
+.pagehead{background:linear-gradient(135deg,#4f46e5,#7c3aed);color:#fff;padding:36px 0}
+.pagehead h1{margin:0 0 8px;font-size:26px}
+.pagehead p{margin:0;opacity:.92;font-size:14px;max-width:680px}
+main .wrap{padding-top:24px;padding-bottom:40px}
+.crumb{font-size:13px;color:var(--muted);margin-bottom:10px}
+.section{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin-bottom:18px}
+.section h2{margin:0 0 12px;font-size:20px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+button{border:0;border-radius:8px;padding:10px 18px;font-size:14px;cursor:pointer;background:var(--brand);color:#fff}
+button:hover{background:var(--brand-dark)}
+button.ghost{background:#f3f4f6;color:var(--ink)}
+button.ghost:hover{background:#e5e7eb}
+button:disabled{opacity:.5;cursor:not-allowed}
+.drop{border:2px dashed #c7d2fe;border-radius:var(--radius);background:#eef2ff;padding:32px 16px;text-align:center;color:var(--brand);margin-bottom:14px;cursor:pointer}
+.drop small{display:block;color:var(--muted);margin-top:6px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+th{color:var(--muted);font-size:13px}
+.empty{text-align:center;color:var(--muted);padding:24px!important}
+.rowbtn{padding:6px 10px;font-size:13px;margin:2px 4px 2px 0;background:#eef2ff;color:var(--brand)}
+.rowbtn:hover{background:#e0e7ff}
+.rowbtn.danger{background:#f3f4f6;color:var(--ink)}
+.idx{display:inline-block;min-width:26px;height:26px;line-height:26px;text-align:center;background:var(--brand);color:#fff;border-radius:8px;font-size:13px;font-weight:700;margin-right:8px}
+.logbox{background:#111827;color:#d1d5db;border-radius:var(--radius);padding:14px 16px;font-size:13px;max-height:220px;overflow-y:auto;font-family:Consolas,Menlo,monospace;line-height:1.8}
+.logbox .t{color:#6b7280}.logbox .ok{color:#34d399}.logbox .warn{color:#fbbf24}.logbox .err{color:#f87171}
+.steps{padding-left:20px;margin:8px 0}.steps li{margin-bottom:8px}
+.note{background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:12px 14px;font-size:13px;color:#92400e;margin-top:12px}
+.faq details{border-bottom:1px solid var(--line);padding:12px 0}
+.faq summary{cursor:pointer;font-weight:600;font-size:15px}
+.faq p{color:var(--muted);font-size:14px;margin:8px 0 0}
+.rel-tools{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.rel-tools a{background:#eef2ff;color:var(--brand);padding:8px 14px;border-radius:8px;font-size:14px}
+footer.site{background:#111827;color:#9ca3af;padding:28px 0;font-size:13px;margin-top:30px}
+footer.site .wrap{display:flex;flex-direction:column;gap:8px}
+@media(max-width:720px){.pagehead h1{font-size:22px}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">快<span>PDF</span>工具箱</a>
+    <nav class="mainnav">
+      <a href="index.html">首页</a>
+      <a href="jiemi.html">PDF解密</a>
+      <a href="hebing.html" class="active">PDF合并</a>
+      <a href="yasuo.html">PDF压缩</a>
+    </nav>
+  </div>
+</header>
+
+<div class="pagehead"><div class="wrap">
+  <h1>📚 PDF 合并</h1>
+  <p>免费在线将多个 PDF 按顺序合并成一个文件。文件仅在浏览器本地处理，不上传服务器。</p>
+</div></div>
+
+<main><div class="wrap">
+  <div class="crumb"><a href="index.html">首页</a> / PDF合并</div>
+
+  <div class="section">
+    <div class="toolbar">
+      <button id="addBtn">＋ 添加 PDF 文件</button>
+      <button id="mergeBtn">开始合并</button>
+      <button id="clearBtn" class="ghost">清空列表</button>
+      <input type="file" id="fileInput" accept="application/pdf,.pdf" multiple hidden>
+    </div>
+    <div class="drop" id="dropZone">把 PDF 文件拖到这里，或点击添加<small>按列表顺序合并，用 ↑ ↓ 调整顺序</small></div>
+    <table>
+      <thead><tr><th style="width:60px">顺序</th><th>文件名</th><th>大小</th><th>操作</th></tr></thead>
+      <tbody id="fileList"><tr><td colspan="4" class="empty">还没有添加文件（至少添加 2 个）</td></tr></tbody>
+    </table>
+    <div class="note">💡 提示：已加密（带打开密码）的 PDF 无法直接合并，请先用 <a href="jiemi.html">PDF解密</a> 工具解锁后再合并。</div>
+  </div>
+
+  <div class="section">
+    <h2>运行日志</h2>
+    <div class="logbox" id="log"><div><span class="t">[就绪]</span> 等待添加 PDF 文件…</div></div>
+  </div>
+
+  <div class="section">
+    <h2>使用步骤</h2>
+    <ol class="steps">
+      <li><b>添加文件</b>：点击按钮或拖拽，至少添加 2 个 PDF。</li>
+      <li><b>调整顺序</b>：用每行右侧的 ↑ ↓ 按钮调整合并顺序。</li>
+      <li><b>开始合并</b>：点击「开始合并」，完成后自动下载合并后的文件。</li>
+    </ol>
+    <div class="rel-tools">
+      <span style="color:var(--muted);font-size:14px">相关工具：</span>
+      <a href="jiemi.html">🔓 PDF解密</a>
+      <a href="yasuo.html">🗜️ PDF压缩</a>
+    </div>
+  </div>
+
+  <div class="section faq">
+    <h2>常见问题</h2>
+    <details open><summary>合并后的页面顺序是怎样的？</summary><p>严格按列表顺序拼接，每个文件内部保持原有页序。</p></details>
+    <details><summary>带密码的 PDF 能合并吗？</summary><p>不能，加密文件会被跳过。请先用本站 PDF解密 工具解锁后再合并。</p></details>
+    <details><summary>文件会被上传吗？</summary><p>不会，合并全程在浏览器本地完成。</p></details>
+  </div>
+</div></main>
+
+<footer class="site"><div class="wrap">
+  <div><a class="logo" href="index.html" style="color:#fff">快<span>PDF</span>工具箱</a></div>
+  <div>本站工具仅供处理您拥有合法权利的文档。请勿用于侵犯他人著作权或隐私的用途。</div>
+  <div>© 2026 快PDF工具箱 · 网站雏形演示版本</div>
+</div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script>
+(function(){
+"use strict";
+const { PDFDocument } = PDFLib;
+const $=id=>document.getElementById(id);
+const fileInput=$("fileInput"),fileList=$("fileList"),logBox=$("log"),dropZone=$("dropZone");
+let seq=0; const files=[];
+function log(m,c){const d=document.createElement("div");if(c)d.className=c;
+  d.innerHTML='<span class="t">['+new Date().toTimeString().slice(0,8)+']</span> '+m;
+  logBox.appendChild(d);logBox.scrollTop=logBox.scrollHeight;}
+function fmt(b){return b<1024?b+" B":b<1048576?(b/1024).toFixed(1)+" KB":(b/1048576).toFixed(1)+" MB";}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function render(){
+  if(!files.length){fileList.innerHTML='<tr><td colspan="4" class="empty">还没有添加文件（至少添加 2 个）</td></tr>';return;}
+  fileList.innerHTML="";
+  files.forEach((f,i)=>{
+    const tr=document.createElement("tr");
+    tr.innerHTML='<td><span class="idx">'+(i+1)+'</span></td><td>'+esc(f.file.name)+'</td><td>'+fmt(f.file.size)+'</td>'+
+      '<td style="white-space:nowrap"><button class="rowbtn" data-a="up" '+(i===0?"disabled":"")+'>↑</button>'+
+      '<button class="rowbtn" data-a="dn" '+(i===files.length-1?"disabled":"")+'>↓</button>'+
+      '<button class="rowbtn danger" data-a="rm">移除</button></td>';
+    tr.querySelector('[data-a="up"]').addEventListener("click",()=>{files.splice(i-1,0,files.splice(i,1)[0]);render();});
+    tr.querySelector('[data-a="dn"]').addEventListener("click",()=>{files.splice(i+1,0,files.splice(i,1)[0]);render();});
+    tr.querySelector('[data-a="rm"]').addEventListener("click",()=>{files.splice(i,1);render();log("已移除："+esc(f.file.name));});
+    fileList.appendChild(tr);
+  });
+}
+function download(blob,name){const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=name;
+  document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1500);}
+async function merge(){
+  if(files.length<2){log("请至少添加 2 个 PDF 文件","warn");return;}
+  const btn=$("mergeBtn");btn.disabled=true;btn.textContent="合并中…";
+  log("开始合并 "+files.length+" 个文件…");
+  try{
+    const out=await PDFDocument.create();let ok=0,skipped=[];
+    for(const f of files){
+      try{
+        const buf=await f.file.arrayBuffer();
+        const doc=await PDFDocument.load(buf);
+        const pages=await out.copyPages(doc,doc.getPageIndices());
+        pages.forEach(p=>out.addPage(p));ok++;
+        log("已加入："+esc(f.file.name)+"（"+doc.getPageCount()+" 页）");
+      }catch(e){skipped.push(f.file.name);log("跳过："+esc(f.file.name)+"（可能已加密或已损坏）","err");}
+    }
+    if(ok===0){log("没有可合并的页面，任务取消","err");}
+    else{
+      const bytes=await out.save();
+      download(new Blob([bytes],{type:"application/pdf"}),"合并后的PDF.pdf");
+      log("合并完成："+ok+" 个文件，共 "+out.getPageCount()+" 页，已开始下载"+(skipped.length?"（跳过 "+skipped.length+" 个）":""),"ok");
+    }
+  }catch(e){log("合并失败："+esc(e&&e.message||e),"err");}
+  btn.disabled=false;btn.textContent="开始合并";
+}
+function add(fs){
+  const ps=Array.from(fs).filter(f=>/\.pdf$/i.test(f.name));
+  if(!ps.length){log("请选择 .pdf 文件","warn");return;}
+  ps.forEach(f=>{files.push({id:++seq,file:f});log("已添加："+esc(f.file.name)+"（"+fmt(f.file.size)+"）");});
+  render();
+}
+$("addBtn").addEventListener("click",()=>fileInput.click());
+fileInput.addEventListener("change",()=>{add(fileInput.files);fileInput.value="";});
+["dragover","dragenter"].forEach(x=>dropZone.addEventListener(x,e=>e.preventDefault()));
+dropZone.addEventListener("drop",e=>{e.preventDefault();add(e.dataTransfer.files);});
+dropZone.addEventListener("click",()=>fileInput.click());
+$("mergeBtn").addEventListener("click",merge);
+$("clearBtn").addEventListener("click",()=>{files.length=0;render();log("已清空列表");});
+})();
+</script>
+</body>
+</html>

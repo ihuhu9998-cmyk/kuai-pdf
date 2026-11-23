@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PDF解密去密码 - 免费在线去除PDF密码与限制 | 快PDF工具箱</title>
+<meta name="description" content="免费在线PDF解密工具：去除PDF打开密码与复制、打印限制。浏览器本地处理，文件不上传，无需注册。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="快PDF工具箱">
+<meta property="og:title" content="PDF解密去密码 - 免费在线去除PDF密码与限制 | 快PDF工具箱">
+<meta property="og:description" content="免费在线PDF解密工具：去除PDF打开密码与复制、打印限制。浏览器本地处理，文件不上传，无需注册。">
+<style>
+:root{--bg:#f4f6fb;--ink:#1f2937;--muted:#6b7280;--brand:#4f46e5;--brand-dark:#4338ca;--ok:#059669;--warn:#d97706;--err:#dc2626;--line:#e5e7eb;--radius:12px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.7}
+a{color:var(--brand);text-decoration:none}
+.site-header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.site-header .wrap{max-width:1024px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;gap:20px}
+.logo{font-size:19px;font-weight:800;color:var(--ink);white-space:nowrap}
+.logo span{color:var(--brand)}
+nav.mainnav{display:flex;gap:4px;flex-wrap:wrap}
+nav.mainnav a{padding:8px 14px;border-radius:8px;color:var(--ink);font-size:14px}
+nav.mainnav a:hover{background:#eef2ff;color:var(--brand)}
+nav.mainnav a.active{background:#eef2ff;color:var(--brand);font-weight:700}
+.wrap{max-width:1024px;margin:0 auto;padding:0 16px}
+.pagehead{background:linear-gradient(135deg,#4f46e5,#7c3aed);color:#fff;padding:36px 0}
+.pagehead h1{margin:0 0 8px;font-size:26px}
+.pagehead p{margin:0;opacity:.92;font-size:14px;max-width:680px}
+main .wrap{padding-top:24px;padding-bottom:40px}
+.crumb{font-size:13px;color:var(--muted);margin-bottom:10px}
+.section{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin-bottom:18px}
+.section h2{margin:0 0 12px;font-size:20px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+button{border:0;border-radius:8px;padding:10px 18px;font-size:14px;cursor:pointer;background:var(--brand);color:#fff}
+button:hover{background:var(--brand-dark)}
+button.secondary{background:#eef2ff;color:var(--brand)}
+button.secondary:hover{background:#e0e7ff}
+button.ghost{background:#f3f4f6;color:var(--ink)}
+button.ghost:hover{background:#e5e7eb}
+button:disabled{opacity:.5;cursor:not-allowed}
+.drop{border:2px dashed #c7d2fe;border-radius:var(--radius);background:#eef2ff;padding:32px 16px;text-align:center;color:var(--brand);margin-bottom:14px;cursor:pointer}
+.drop small{display:block;color:var(--muted);margin-top:6px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+th{color:var(--muted);font-size:13px}
+.empty{text-align:center;color:var(--muted);padding:24px!important}
+.status{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;white-space:nowrap}
+.st-checking{background:#f3f4f6;color:var(--muted)}.st-ready{background:#d1fae5;color:var(--ok)}
+.st-need{background:#fef3c7;color:var(--warn)}.st-working{background:#dbeafe;color:var(--brand)}
+.st-done{background:#d1fae5;color:var(--ok)}.st-fail{background:#fee2e2;color:var(--err)}
+.pwd{width:130px;padding:7px 9px;border:1px solid var(--line);border-radius:6px;font-size:13px}
+.rowbtn{padding:6px 12px;font-size:13px;margin:2px 4px 2px 0}
+.progress{height:6px;background:#eef2ff;border-radius:999px;overflow:hidden;min-width:90px}
+.progress i{display:block;height:100%;width:0;background:var(--brand);transition:width .2s}
+.logbox{background:#111827;color:#d1d5db;border-radius:var(--radius);padding:14px 16px;font-size:13px;max-height:220px;overflow-y:auto;font-family:Consolas,Menlo,monospace;line-height:1.8}
+.logbox .t{color:#6b7280}.logbox .ok{color:#34d399}.logbox .warn{color:#fbbf24}.logbox .err{color:#f87171}
+.steps{padding-left:20px;margin:8px 0}.steps li{margin-bottom:8px}
+.note{background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:12px 14px;font-size:13px;color:#92400e;margin-top:12px}
+.faq details{border-bottom:1px solid var(--line);padding:12px 0}
+.faq summary{cursor:pointer;font-weight:600;font-size:15px}
+.faq p{color:var(--muted);font-size:14px;margin:8px 0 0}
+.rel-tools{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.rel-tools a{background:#eef2ff;color:var(--brand);padding:8px 14px;border-radius:8px;font-size:14px}
+footer.site{background:#111827;color:#9ca3af;padding:28px 0;font-size:13px;margin-top:30px}
+footer.site .wrap{display:flex;flex-direction:column;gap:8px}
+@media(max-width:720px){.pagehead h1{font-size:22px}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">快<span>PDF</span>工具箱</a>
+    <nav class="mainnav">
+      <a href="index.html">首页</a>
+      <a href="jiemi.html" class="active">PDF解密</a>
+      <a href="hebing.html">PDF合并</a>
+      <a href="yasuo.html">PDF压缩</a>
+    </nav>
+  </div>
+</header>
+
+<div class="pagehead"><div class="wrap">
+  <h1>🔓 PDF 解密去密码</h1>
+  <p>免费在线去除 PDF 的打开密码与复制、打印限制。文件仅在浏览器本地处理，不上传服务器。</p>
+</div></div>
+
+<main><div class="wrap">
+  <div class="crumb"><a href="index.html">首页</a> / PDF解密</div>
+
+  <div class="section">
+    <div class="toolbar">
+      <button id="addBtn">＋ 添加 PDF 文件</button>
+      <button id="unlockAllBtn" class="secondary">全部解锁</button>
+      <button id="clearBtn" class="ghost">清空列表</button>
+      <input type="file" id="fileInput" accept="application/pdf,.pdf" multiple hidden>
+    </div>
+    <div class="drop" id="dropZone">把 PDF 文件拖到这里，或点击添加<small>支持多选，可批量处理</small></div>
+    <table>
+      <thead><tr><th>文件名</th><th>大小</th><th>页数</th><th>状态</th><th>打开密码</th><th>操作</th><th style="width:110px">进度</th></tr></thead>
+      <tbody id="fileList"><tr><td colspan="7" class="empty">还没有添加文件</td></tr></tbody>
+    </table>
+    <div class="note">⚠️ 需要你知道文件的打开密码才能解锁，本工具无法破解未知密码。解锁后为重新生成的版本，版式一致，适合阅读与打印。请确保你对文件拥有合法的处理权利。</div>
+  </div>
+
+  <div class="section">
+    <h2>运行日志</h2>
+    <div class="logbox" id="log"><div><span class="t">[就绪]</span> 等待添加 PDF 文件…</div></div>
+  </div>
+
+  <div class="section">
+    <h2>使用步骤</h2>
+    <ol class="steps">
+      <li><b>添加文件</b>：点击按钮或拖拽，可一次添加多个 PDF。</li>
+      <li><b>输入密码</b>：有打开密码的文件，在密码框中填入后才能解锁；只有打印/复制限制的文件可直接解锁。</li>
+      <li><b>解锁下载</b>：点击单行「解锁」或「全部解锁」，完成后自动下载 <i>原文件名_已解锁.pdf</i>。</li>
+    </ol>
+    <div class="rel-tools">
+      <span style="color:var(--muted);font-size:14px">相关工具：</span>
+      <a href="hebing.html">📚 PDF合并</a>
+      <a href="yasuo.html">🗜️ PDF压缩</a>
+    </div>
+  </div>
+
+  <div class="section faq">
+    <h2>常见问题</h2>
+    <details open><summary>忘记 PDF 密码了，能破解吗？</summary><p>不能。本工具需要你输入正确的打开密码才能解锁，不提供暴力破解功能。</p></details>
+    <details><summary>解密后的文件和原文件一样吗？</summary><p>版式、内容一致，但为重新生成版本，文字不可选中复制，适合阅读与打印归档。</p></details>
+    <details><summary>文件会被上传吗？</summary><p>不会，全部在浏览器本地完成，关闭页面不留痕迹。</p></details>
+  </div>
+</div></main>
+
+<footer class="site"><div class="wrap">
+  <div><a class="logo" href="index.html" style="color:#fff">快<span>PDF</span>工具箱</a></div>
+  <div>本站工具仅供处理您拥有合法权利的文档。请勿用于侵犯他人著作权或隐私的用途。</div>
+  <div>© 2026 快PDF工具箱 · 网站雏形演示版本</div>
+</div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+(function(){
+"use strict";
+pdfjsLib.GlobalWorkerOptions.workerSrc="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+const { jsPDF } = window.jspdf;
+const $=id=>document.getElementById(id);
+const fileInput=$("fileInput"),fileList=$("fileList"),logBox=$("log"),dropZone=$("dropZone");
+let seq=0; const entries=new Map();
+function log(m,c){const d=document.createElement("div");if(c)d.className=c;
+  d.innerHTML='<span class="t">['+new Date().toTimeString().slice(0,8)+']</span> '+m;
+  logBox.appendChild(d);logBox.scrollTop=logBox.scrollHeight;}
+function fmt(b){return b<1024?b+" B":b<1048576?(b/1024).toFixed(1)+" KB":(b/1048576).toFixed(1)+" MB";}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+const ST={checking:["st-checking","检测中…"],ready:["st-ready","可直接解锁"],need:["st-need","需要密码"],
+  working:["st-working","解锁中…"],done:["st-done","已完成"],fail:["st-fail","失败"]};
+function renderRow(e){
+  let tr=fileList.querySelector('tr[data-id="'+e.id+'"]');
+  if(!tr){tr=document.createElement("tr");tr.dataset.id=e.id;fileList.appendChild(tr);}
+  const cls=ST[e.status]||ST.checking, need=e.status==="need";
+  tr.innerHTML='<td>'+esc(e.file.name)+'</td><td>'+fmt(e.file.size)+'</td><td>'+(e.pages==null?"—":e.pages)+'</td>'+
+    '<td><span class="status '+cls[0]+'">'+cls[1]+'</span></td>'+
+    '<td>'+(need?'<input class="pwd" type="password" placeholder="输入打开密码" value="'+esc(e.password||"")+'">':'<span style="color:#9ca3af">—</span>')+'</td>'+
+    '<td style="white-space:nowrap"><button class="rowbtn" data-a="u" '+((e.status==="ready"||e.status==="need"||e.status==="fail")?"":"disabled")+'>解锁</button>'+
+    '<button class="rowbtn ghost" data-a="r">移除</button></td>'+
+    '<td><div class="progress"><i style="width:'+Math.round((e.progress||0)*100)+'%"></i></div></td>';
+  const pi=tr.querySelector(".pwd");
+  if(pi){pi.addEventListener("input",()=>e.password=pi.value);
+    pi.addEventListener("keydown",ev=>{if(ev.key==="Enter"){e.password=pi.value;unlock(e);}});}
+  tr.querySelector('[data-a="u"]').addEventListener("click",()=>unlock(e));
+  tr.querySelector('[data-a="r"]').addEventListener("click",()=>{entries.delete(e.id);tr.remove();
+    if(!entries.size)fileList.innerHTML='<tr><td colspan="7" class="empty">还没有添加文件</td></tr>';
+    log("已移除："+esc(e.file.name));});
+}
+function setSt(e,s){e.status=s;renderRow(e);}
+function setP(e,p){e.progress=p;const b=fileList.querySelector('tr[data-id="'+e.id+'"] .progress i');if(b)b.style.width=Math.round(p*100)+"%";}
+async function probe(e){
+  setSt(e,"checking");
+  try{const buf=await e.file.arrayBuffer();
+    const doc=await pdfjsLib.getDocument({data:new Uint8Array(buf)}).promise;
+    e.pages=doc.numPages;await doc.destroy();setSt(e,"ready");
+    log("已添加："+esc(e.file.name)+"（"+e.pages+" 页，无打开密码）","ok");
+  }catch(err){
+    if(err&&err.name==="PasswordException"){setSt(e,"need");log("已添加："+esc(e.file.name)+"（需要打开密码）","warn");}
+    else{setSt(e,"fail");log("添加失败："+esc(e.file.name)+"（"+esc(err&&err.message||err)+"）","err");}
+  }
+}
+async function unlock(e){
+  if(e.status==="working"||e.status==="done")return;
+  if(e.status==="need"&&!e.password){log("请先输入「"+esc(e.file.name)+"」的打开密码","warn");
+    const i=fileList.querySelector('tr[data-id="'+e.id+'"] .pwd');if(i)i.focus();return;}
+  setSt(e,"working");setP(e,0);log("开始解锁："+esc(e.file.name)+" …");
+  try{
+    const buf=await e.file.arrayBuffer();
+    const doc=await pdfjsLib.getDocument({data:new Uint8Array(buf),password:e.password||undefined}).promise;
+    const S=2;let pdf=null;const n=doc.numPages;e.pages=n;
+    for(let i=1;i<=n;i++){
+      const page=await doc.getPage(i);
+      const v1=page.getViewport({scale:1}),vp=page.getViewport({scale:S});
+      const cv=document.createElement("canvas");cv.width=Math.ceil(vp.width);cv.height=Math.ceil(vp.height);
+      const cx=cv.getContext("2d",{alpha:false});cx.fillStyle="#fff";cx.fillRect(0,0,cv.width,cv.height);
+      await page.render({canvasContext:cx,viewport:vp}).promise;
+      const img=cv.toDataURL("image/jpeg",0.92),w=v1.width,h=v1.height,o=w>h?"landscape":"portrait";
+      if(!pdf)pdf=new jsPDF({unit:"pt",format:[w,h],orientation:o,compress:true});
+      else pdf.addPage([w,h],o);
+      pdf.addImage(img,"JPEG",0,0,w,h);page.cleanup();cv.width=0;setP(e,i/n);
+    }
+    const out=e.file.name.replace(/\.pdf$/i,"")+"_已解锁.pdf";
+    pdf.save(out);await doc.destroy();setP(e,1);setSt(e,"done");
+    log("解锁完成 → 已下载 "+esc(out),"ok");
+  }catch(err){
+    if(err&&err.name==="PasswordException"){setSt(e,"need");setP(e,0);log("密码错误："+esc(e.file.name)+"，请重试","err");}
+    else{setSt(e,"fail");setP(e,0);log("解锁失败："+esc(e.file.name)+"（"+esc(err&&err.message||err)+"）","err");}
+  }
+}
+function add(fs){
+  const ps=Array.from(fs).filter(f=>/\.pdf$/i.test(f.name));
+  if(!ps.length){log("请选择 .pdf 文件","warn");return;}
+  if(fileList.querySelector(".empty"))fileList.innerHTML="";
+  ps.forEach(f=>{const e={id:++seq,file:f,status:"checking",password:"",pages:null,progress:0};
+    entries.set(e.id,e);renderRow(e);probe(e);});
+}
+$("addBtn").addEventListener("click",()=>fileInput.click());
+fileInput.addEventListener("change",()=>{add(fileInput.files);fileInput.value="";});
+["dragover","dragenter"].forEach(x=>dropZone.addEventListener(x,e=>e.preventDefault()));
+dropZone.addEventListener("drop",e=>{e.preventDefault();add(e.dataTransfer.files);});
+dropZone.addEventListener("click",()=>fileInput.click());
+$("unlockAllBtn").addEventListener("click",async()=>{
+  const l=Array.from(entries.values()).filter(e=>["ready","need","fail"].includes(e.status));
+  if(!l.length){log("没有可解锁的文件","warn");return;}
+  $("unlockAllBtn").disabled=true;
+  for(const e of l)await unlock(e);
+  $("unlockAllBtn").disabled=false;log("批量处理结束","ok");
+});
+$("clearBtn").addEventListener("click",()=>{entries.clear();
+  fileList.innerHTML='<tr><td colspan="7" class="empty">还没有添加文件</td></tr>';log("已清空列表");});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>快PDF工具箱 - 免费在线PDF解密、合并、压缩</title>
+<meta name="description" content="快PDF工具箱：免费在线PDF解密去密码、PDF合并、PDF压缩工具。所有处理在浏览器本地完成，文件不上传服务器，无需注册。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="快PDF工具箱">
+<meta property="og:title" content="快PDF工具箱 - 免费在线PDF解密、合并、压缩">
+<meta property="og:description" content="快PDF工具箱：免费在线PDF解密去密码、PDF合并、PDF压缩工具。所有处理在浏览器本地完成，文件不上传服务器，无需注册。">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"这些工具真的免费吗？","acceptedAnswer":{"@type":"Answer","text":"是的，解密、合并、压缩等核心功能完全免费，也不需要注册账号。"}},
+{"@type":"Question","name":"我的文件会被上传到服务器吗？","acceptedAnswer":{"@type":"Answer","text":"不会。本站工具采用纯前端技术，文件只在你的浏览器本地处理，关闭页面后不留痕迹。"}},
+{"@type":"Question","name":"PDF 解密需要知道密码吗？","acceptedAnswer":{"@type":"Answer","text":"如果 PDF 设置了打开密码，需要你输入正确的密码才能解锁；仅有限制（禁止复制/打印）而无打开密码的文件可直接去除限制。请确保你对文件拥有合法的处理权利。"}},
+{"@type":"Question","name":"有文件大小限制吗？","acceptedAnswer":{"@type":"Answer","text":"处理在浏览器内存中进行，建议单个文件在 200MB 以内，超大文件可能因设备内存不足而失败。"}}
+]}
+</script>
+<style>
+:root{--bg:#f4f6fb;--card:#fff;--ink:#1f2937;--muted:#6b7280;--brand:#4f46e5;--brand-dark:#4338ca;--line:#e5e7eb;--radius:12px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.7}
+a{color:var(--brand);text-decoration:none}
+.site-header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.site-header .wrap{max-width:1024px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;gap:20px}
+.logo{font-size:19px;font-weight:800;color:var(--ink);white-space:nowrap}
+.logo span{color:var(--brand)}
+nav.mainnav{display:flex;gap:4px;flex-wrap:wrap}
+nav.mainnav a{padding:8px 14px;border-radius:8px;color:var(--ink);font-size:14px}
+nav.mainnav a:hover{background:#eef2ff;color:var(--brand)}
+nav.mainnav a.active{background:#eef2ff;color:var(--brand);font-weight:700}
+.wrap{max-width:1024px;margin:0 auto;padding:0 16px}
+.hero{background:linear-gradient(135deg,#4f46e5,#7c3aed);color:#fff;padding:56px 0}
+.hero h1{margin:0 0 10px;font-size:30px}
+.hero p{margin:0;opacity:.92;font-size:15px;max-width:660px}
+main .wrap{padding-top:28px;padding-bottom:40px}
+.tool-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}
+.tool-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:block;color:var(--ink);transition:transform .15s,box-shadow .15s}
+.tool-card:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(79,70,229,.12)}
+.tool-card .icon{font-size:34px}
+.tool-card h3{margin:10px 0 6px;font-size:17px}
+.tool-card p{margin:0;color:var(--muted);font-size:13px}
+.tool-card .go{color:var(--brand);font-size:14px;font-weight:600;margin-top:10px;display:inline-block}
+.section{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin-bottom:18px}
+.section h2{margin:0 0 12px;font-size:20px}
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.feat{background:#f8faff;border:1px solid var(--line);border-radius:10px;padding:16px}
+.feat h4{margin:0 0 6px;font-size:15px}
+.feat p{margin:0;color:var(--muted);font-size:13px}
+.faq details{border-bottom:1px solid var(--line);padding:12px 0}
+.faq summary{cursor:pointer;font-weight:600;font-size:15px}
+.faq p{color:var(--muted);font-size:14px;margin:8px 0 0}
+footer.site{background:#111827;color:#9ca3af;padding:28px 0;font-size:13px;margin-top:30px}
+footer.site .wrap{display:flex;flex-direction:column;gap:8px}
+@media(max-width:720px){.tool-grid,.feat-grid{grid-template-columns:1fr}.hero h1{font-size:24px}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">快<span>PDF</span>工具箱</a>
+    <nav class="mainnav">
+      <a href="index.html" class="active">首页</a>
+      <a href="jiemi.html">PDF解密</a>
+      <a href="hebing.html">PDF合并</a>
+      <a href="yasuo.html">PDF压缩</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>免费在线 PDF 工具箱</h1>
+    <p>PDF 解密去密码、PDF 合并、PDF 压缩，一站搞定。所有处理都在你的浏览器本地完成，文件不会上传到任何服务器，无需注册，打开即用。</p>
+  </div>
+</div>
+
+<main><div class="wrap">
+  <div class="tool-grid">
+    <a class="tool-card" href="jiemi.html">
+      <div class="icon">🔓</div>
+      <h3>PDF 解密去密码</h3>
+      <p>去除 PDF 的打开密码与复制、打印限制，输入密码一键解锁下载。</p>
+      <span class="go">立即使用 →</span>
+    </a>
+    <a class="tool-card" href="hebing.html">
+      <div class="icon">📚</div>
+      <h3>PDF 合并</h3>
+      <p>将多个 PDF 文件按顺序合并成一个，支持调整顺序、批量处理。</p>
+      <span class="go">立即使用 →</span>
+    </a>
+    <a class="tool-card" href="yasuo.html">
+      <div class="icon">🗜️</div>
+      <h3>PDF 压缩</h3>
+      <p>一键压缩 PDF 体积，三档清晰度可选，压缩前后大小直观对比。</p>
+      <span class="go">立即使用 →</span>
+    </a>
+  </div>
+
+  <div class="section">
+    <h2>为什么选择快PDF工具箱</h2>
+    <div class="feat-grid">
+      <div class="feat"><h4>🔒 隐私安全</h4><p>纯前端处理，文件只在你的浏览器里运算，不经过任何服务器，敏感文档也放心用。</p></div>
+      <div class="feat"><h4>🆓 免费无套路</h4><p>核心功能完全免费，无需注册登录，没有水印，不强制下载客户端。</p></div>
+      <div class="feat"><h4>⚡ 打开即用</h4><p>不用安装任何软件，手机、电脑浏览器打开网页就能处理，应急时特别方便。</p></div>
+    </div>
+  </div>
+
+  <div class="section faq">
+    <h2>常见问题</h2>
+    <details open><summary>这些工具真的免费吗？</summary><p>是的，解密、合并、压缩等核心功能完全免费，也不需要注册账号。</p></details>
+    <details><summary>我的文件会被上传到服务器吗？</summary><p>不会。本站工具采用纯前端技术，文件只在你的浏览器本地处理，关闭页面后不留痕迹。</p></details>
+    <details><summary>PDF 解密需要知道密码吗？</summary><p>如果 PDF 设置了打开密码，需要你输入正确的密码才能解锁；仅有限制（禁止复制/打印）而无打开密码的文件可直接去除限制。请确保你对文件拥有合法的处理权利。</p></details>
+    <details><summary>有文件大小限制吗？</summary><p>处理在浏览器内存中进行，建议单个文件在 200MB 以内，超大文件可能因设备内存不足而失败。</p></details>
+  </div>
+</div></main>
+
+<footer class="site">
+  <div class="wrap">
+    <div><a class="logo" href="index.html" style="color:#fff">快<span>PDF</span>工具箱</a></div>
+    <div>本站工具仅供处理您拥有合法权利的文档。请勿用于侵犯他人著作权或隐私的用途。</div>
+    <div>© 2026 快PDF工具箱 · 网站雏形演示版本</div>
+  </div>
+</footer>
+</body>
+</html>
